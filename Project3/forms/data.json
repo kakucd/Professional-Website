@@ -1,0 +1,5 @@
+{"Date":"2016-12-06","Name":"Emily","Phone Number":"2532616611","Email Address":"myemail@gmail.com","Job Title":"None","Additional Notes":"yo","Person of Interest":{"emily":"emily","casey":"casey"}}
+{"Date":"2016-12-07","Name":"Chris Pine","Phone Number":"2532616611","Email Address":"myemail@gmail.com","Job Title":"Movie Star","Additional Notes":"chris pine is fine","Person of Interest":["emily",null]}
+{"Date":"2016-12-06","Name":"Emily","Phone Number":"2532616611","Email Address":"myemail@gmail.com","Job Title":"Movie Star","Additional Notes":"","Person of Interest":["emily","casey"]}
+{"Date":"2016-12-07","Name":"Emily","Phone Number":"2532616611","Email Address":"myemail@gmail.com","Job Title":"Job","Additional Notes":"you guys rockkkkkkkkkkk","Person of Interest":["emily","casey"]}
+{"Date":"2016-12-17","Name":"Emily","Phone Number":"2532616611","Email Address":"ejbower@gmail.com","Job Title":"None","Additional Notes":"hi","Person of Interest":["emily","casey"]}

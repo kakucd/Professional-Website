@@ -1,0 +1,267 @@
+@import 'default';
+html, body {
+  width: 99.5%;
+  height: 100%;
+  margin: 5px;
+  padding: 15px;
+  background-color: $purple;
+  color: $olive; }
+
+.clearfix { overflow: auto; }
+.clearfix::after { clear: both; display:table; }
+
+header, section, article, nav, div, main, aside, footer {
+  overflow: hidden; }
+
+main {
+  padding: 5px;
+  margin: 3px; }
+
+@mixin head {
+  font-size: 30px;
+  font-family: $jul;
+  border-bottom: 3px solid $yellow;
+  text-align: center;
+  font-weight: bold;
+  padding: 5px;
+  margin: 5px;
+  color: $yellow; }
+
+header {
+  padding: 15px;
+  margin: 5px;
+  font-size: 320%;
+  font-family: $jul;
+  font-weight: bold;
+  text-align: center;
+  background-color: $yellow;
+  color: $purple; }
+
+@mixin pad {
+  padding: 25px;
+  margin: 5px; }
+
+section {
+  @include pad;
+  background-color: $pink;
+  font-size: 18px;
+  font-family: $roboto;
+  header {
+    @include head;
+    background-color: $pink; }
+}
+
+img.icon {
+  width: 100px;
+  height: 100px; }
+
+article {
+  @include pad;
+  font-family: $roboto;
+  color: $olive;
+  header {
+    @include head;
+    background-color: $purple; }
+}
+
+aside {
+  border: 3px solid $olive;
+  font-family: $til;
+  color: $olive;
+  font-size: 17px;
+  header {
+    @include head;
+    background-color: $yellow;
+    color: $purple; }
+}
+
+aside a {
+  color: $olive;
+  text-decoration: none; }
+
+aside a:visited {
+  color: $yellow; }
+
+aside a:hover {
+  font-weight: bold;
+  color: $pink; }
+
+.emphasize {
+  border: 3px solid $purple;
+  border-radius: 5px;
+  padding: 3px 15px 0px 15px;
+  margin: 3px; }
+
+.emphasize2 {
+  border: 3px solid $pink;
+  border-radius: 5px;
+  padding: 3px 15px 0px 15px;
+  margin: 3px; }
+
+footer {
+  background-color: $pink;
+  margin: 5px;
+  padding: 5px;
+  font-family: $jul;
+  text-align: center;
+  bottom: 0;
+  position: relative;
+  right: 0;
+  left: 0; }
+
+* { box-sizing: border-box; }
+
+.label {
+  display: inline-block;
+  float: left;
+  width: 35%;
+  vertical-align: top;
+  text-align: right;
+  margin-right: 15px; }
+
+.label2 {
+  display: inline-block;
+  float: left;
+  width: 50%;
+  vertical-align: top;
+  text-align: left;
+  margin-right: 15px; }
+
+.errorMsg {
+  color: black;
+  font-family: $til;
+  font-size: 15px;
+  font-weight: bold;
+}
+
+/*for aria*/
+input[aria-invalid='false'] {
+  border: 3px solid green;
+}
+
+input[aria-invalid='true'] {
+  border: 3px solid red;
+}
+
+.row::after {
+  content: "";
+  clear: both;
+  display: table; }
+
+[class*="col-"] {
+  float: left;
+  padding: 3px; }
+
+/*for mobile phones*/
+[class*="col-"] {
+  width: 100%; }
+
+div.dropdown {
+  font-family: $jul;
+  font-size: 20px;
+  margin: 15px;
+  display: block;
+  margin-right: 55px; }
+
+/*for tablets*/
+@media only screen and (min-width: 600px) {
+  @for $i from 1 through 12 {
+    .col-m-#{$i} {
+      @if $i <= 12 {
+        @include pad;
+        width: 8% * $i; }
+    }
+  }
+div.dropdown {
+  font-family: $jul;
+  font-size: 20px;
+  margin: 15px;
+  display: block;
+  margin-right: 55px; }
+
+  .label {
+  display: inline-block;
+  float: left;
+  width: 20%;
+  vertical-align: top;
+  text-align: right;
+  margin-right: 15px; }
+
+header { font-size: 75px;} 
+} 
+
+/*for desktops*/
+@media only screen and (min-width: 768px) {
+  @for $i from 1 through 12 {
+    .col-#{$i} {
+      @if $i <= 12 {
+        @include pad;
+        width: 8% * $i; }
+    }
+  }
+div.dropdown {
+  font-family: $jul;
+  font-size: 20px;
+  margin: 15px;
+  display: inline;
+  margin-right: 55px; }
+  
+header { font-size: 75px;}
+ 
+.label {
+  display: inline-block;
+  float: left;
+  width: 20%;
+  vertical-align: top;
+  text-align: right;
+  margin-right: 15px; }
+}
+
+@mixin hover {
+  font-weight: bold;
+  color: $olive;
+  display: inline; }
+
+@mixin link {
+  text-decoration: none;
+  font-family: $jul;
+  color: $olive; }
+
+div.dropdown a.menubtn {
+  @include link; }
+
+div.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: $purple; }
+
+div.dropdown a:hover {
+  opacity: 0.6;
+  @include hover; }
+
+div.dropdown-content a {
+  @include link;
+  margin-right: 20px; }
+
+div.dropdown:hover a.menubtn {
+  color: $olive; }
+
+div.dropdown:hover div.dropdown-content {
+  display: inline;
+  padding-left: 30px; }
+
+.button {
+  background-color: $yellow;
+  font-family: $jul;
+  border: 3px solid $yellow;
+  border-radius: 12px;
+  color: $purple;
+  font-weight: bold;
+  font-size: 20px;
+  padding: 14px 37px;
+  -webkit-transition-duration: 0.5s;
+  transition-duration: 0.5s;}
+
+.button:hover {
+  background-color: $pink;
+  color: $yellow; }

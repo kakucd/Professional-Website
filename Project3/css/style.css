@@ -1,0 +1,376 @@
+html, body {
+  width: 99.5%;
+  height: 100%;
+  margin: 5px;
+  padding: 15px;
+  background-color: #581845;
+  color: #DAF7A6; }
+
+.clearfix {
+  overflow: auto; }
+
+.clearfix::after {
+  clear: both;
+  display: table; }
+
+header, section, article, nav, div, main, aside, footer {
+  overflow: hidden; }
+
+main {
+  padding: 5px;
+  margin: 3px; }
+
+header {
+  padding: 15px;
+  margin: 5px;
+  font-size: 320%;
+  font-family: "Julius Sans One", sans-serif;
+  font-weight: bold;
+  text-align: center;
+  background-color: #FFC30F;
+  color: #581845; }
+
+section {
+  padding: 25px;
+  margin: 5px;
+  background-color: #900C3F;
+  font-size: 18px;
+  font-family: "Roboto Slab", serif; }
+  section header {
+    font-size: 30px;
+    font-family: "Julius Sans One", sans-serif;
+    border-bottom: 3px solid #FFC30F;
+    text-align: center;
+    font-weight: bold;
+    padding: 5px;
+    margin: 5px;
+    color: #FFC30F;
+    background-color: #900C3F; }
+
+img.icon {
+  width: 100px;
+  height: 100px; }
+
+article {
+  padding: 25px;
+  margin: 5px;
+  font-family: "Roboto Slab", serif;
+  color: #DAF7A6; }
+  article header {
+    font-size: 30px;
+    font-family: "Julius Sans One", sans-serif;
+    border-bottom: 3px solid #FFC30F;
+    text-align: center;
+    font-weight: bold;
+    padding: 5px;
+    margin: 5px;
+    color: #FFC30F;
+    background-color: #581845; }
+
+aside {
+  border: 3px solid #DAF7A6;
+  font-family: "Titillium Web", sans-serif;
+  color: #DAF7A6;
+  font-size: 17px; }
+  aside header {
+    font-size: 30px;
+    font-family: "Julius Sans One", sans-serif;
+    border-bottom: 3px solid #FFC30F;
+    text-align: center;
+    font-weight: bold;
+    padding: 5px;
+    margin: 5px;
+    color: #FFC30F;
+    background-color: #FFC30F;
+    color: #581845; }
+
+aside a {
+  color: #DAF7A6;
+  text-decoration: none; }
+
+aside a:visited {
+  color: #FFC30F; }
+
+aside a:hover {
+  font-weight: bold;
+  color: #900C3F; }
+
+.emphasize {
+  border: 3px solid #581845;
+  border-radius: 5px;
+  padding: 3px 15px 0px 15px;
+  margin: 3px; }
+
+.emphasize2 {
+  border: 3px solid #900C3F;
+  border-radius: 5px;
+  padding: 3px 15px 0px 15px;
+  margin: 3px; }
+
+footer {
+  background-color: #900C3F;
+  margin: 5px;
+  padding: 5px;
+  font-family: "Julius Sans One", sans-serif;
+  text-align: center;
+  bottom: 0;
+  position: relative;
+  right: 0;
+  left: 0; }
+
+* {
+  box-sizing: border-box; }
+
+.label {
+  display: inline-block;
+  float: left;
+  width: 35%;
+  vertical-align: top;
+  text-align: right;
+  margin-right: 15px; }
+
+.label2 {
+  display: inline-block;
+  float: left;
+  width: 50%;
+  vertical-align: top;
+  text-align: left;
+  margin-right: 15px; }
+
+.errorMsg {
+  color: black;
+  font-family: "Titillium Web", sans-serif;
+  font-size: 15px;
+  font-weight: bold; }
+
+/*for aria*/
+input[aria-invalid='false'] {
+  border: 3px solid green; }
+
+input[aria-invalid='true'] {
+  border: 3px solid red; }
+
+.row::after {
+  content: "";
+  clear: both;
+  display: table; }
+
+[class*="col-"] {
+  float: left;
+  padding: 3px; }
+
+/*for mobile phones*/
+[class*="col-"] {
+  width: 100%; }
+
+div.dropdown {
+  font-family: "Julius Sans One", sans-serif;
+  font-size: 20px;
+  margin: 15px;
+  display: block;
+  margin-right: 55px; }
+
+/*for tablets*/
+@media only screen and (min-width: 600px) {
+  .col-m-1 {
+    padding: 25px;
+    margin: 5px;
+    width: 8%; }
+
+  .col-m-2 {
+    padding: 25px;
+    margin: 5px;
+    width: 16%; }
+
+  .col-m-3 {
+    padding: 25px;
+    margin: 5px;
+    width: 24%; }
+
+  .col-m-4 {
+    padding: 25px;
+    margin: 5px;
+    width: 32%; }
+
+  .col-m-5 {
+    padding: 25px;
+    margin: 5px;
+    width: 40%; }
+
+  .col-m-6 {
+    padding: 25px;
+    margin: 5px;
+    width: 48%; }
+
+  .col-m-7 {
+    padding: 25px;
+    margin: 5px;
+    width: 56%; }
+
+  .col-m-8 {
+    padding: 25px;
+    margin: 5px;
+    width: 64%; }
+
+  .col-m-9 {
+    padding: 25px;
+    margin: 5px;
+    width: 72%; }
+
+  .col-m-10 {
+    padding: 25px;
+    margin: 5px;
+    width: 80%; }
+
+  .col-m-11 {
+    padding: 25px;
+    margin: 5px;
+    width: 88%; }
+
+  .col-m-12 {
+    padding: 25px;
+    margin: 5px;
+    width: 96%; }
+
+  div.dropdown {
+    font-family: "Julius Sans One", sans-serif;
+    font-size: 20px;
+    margin: 15px;
+    display: block;
+    margin-right: 55px; }
+
+  .label {
+    display: inline-block;
+    float: left;
+    width: 20%;
+    vertical-align: top;
+    text-align: right;
+    margin-right: 15px; }
+
+  header {
+    font-size: 75px; } }
+/*for desktops*/
+@media only screen and (min-width: 768px) {
+  .col-1 {
+    padding: 25px;
+    margin: 5px;
+    width: 8%; }
+
+  .col-2 {
+    padding: 25px;
+    margin: 5px;
+    width: 16%; }
+
+  .col-3 {
+    padding: 25px;
+    margin: 5px;
+    width: 24%; }
+
+  .col-4 {
+    padding: 25px;
+    margin: 5px;
+    width: 32%; }
+
+  .col-5 {
+    padding: 25px;
+    margin: 5px;
+    width: 40%; }
+
+  .col-6 {
+    padding: 25px;
+    margin: 5px;
+    width: 48%; }
+
+  .col-7 {
+    padding: 25px;
+    margin: 5px;
+    width: 56%; }
+
+  .col-8 {
+    padding: 25px;
+    margin: 5px;
+    width: 64%; }
+
+  .col-9 {
+    padding: 25px;
+    margin: 5px;
+    width: 72%; }
+
+  .col-10 {
+    padding: 25px;
+    margin: 5px;
+    width: 80%; }
+
+  .col-11 {
+    padding: 25px;
+    margin: 5px;
+    width: 88%; }
+
+  .col-12 {
+    padding: 25px;
+    margin: 5px;
+    width: 96%; }
+
+  div.dropdown {
+    font-family: "Julius Sans One", sans-serif;
+    font-size: 20px;
+    margin: 15px;
+    display: inline;
+    margin-right: 55px; }
+
+  header {
+    font-size: 75px; }
+
+  .label {
+    display: inline-block;
+    float: left;
+    width: 20%;
+    vertical-align: top;
+    text-align: right;
+    margin-right: 15px; } }
+div.dropdown a.menubtn {
+  text-decoration: none;
+  font-family: "Julius Sans One", sans-serif;
+  color: #DAF7A6; }
+
+div.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #581845; }
+
+div.dropdown a:hover {
+  opacity: 0.6;
+  font-weight: bold;
+  color: #DAF7A6;
+  display: inline; }
+
+div.dropdown-content a {
+  text-decoration: none;
+  font-family: "Julius Sans One", sans-serif;
+  color: #DAF7A6;
+  margin-right: 20px; }
+
+div.dropdown:hover a.menubtn {
+  color: #DAF7A6; }
+
+div.dropdown:hover div.dropdown-content {
+  display: inline;
+  padding-left: 30px; }
+
+.button {
+  background-color: #FFC30F;
+  font-family: "Julius Sans One", sans-serif;
+  border: 3px solid #FFC30F;
+  border-radius: 12px;
+  color: #581845;
+  font-weight: bold;
+  font-size: 20px;
+  padding: 14px 37px;
+  -webkit-transition-duration: 0.5s;
+  transition-duration: 0.5s; }
+
+.button:hover {
+  background-color: #900C3F;
+  color: #FFC30F; }
+
+/*# sourceMappingURL=style.css.map */
